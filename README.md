@@ -22,40 +22,40 @@ CVE-2024-31393
 状态  
 | 软件包 | 发布 | 版本 |  状态 |
 |---------|---------|--------|--------|
-| firefox | Launchpad、Ubuntu、Debian | 需要 |
+| firefox | Launchpad、Ubuntu、Debian | focal |需要 |
 |         |         | jammy | <span style="color:green">未受影响（代码不存在）</span> |
 |         |         | mantic | <span style="color:green">未受影响（代码不存在）</span> |
 |         |         | upstream | <span style="color:green">未受影响（debian：仅影响 Firefox for iOS）</span> |
-| thunderbird | Launchpad、Ubuntu、Debian | 需要 |
+| thunderbird | Launchpad、Ubuntu、Debian | focal | 需要 |
 |         |         | jammy | 需要 |
 |         |         | mantic | 需要 |
 |         |         | upstream | 需要分类 |
-| mozjs38 | Launchpad、Ubuntu、Debian | 需要分类 |
+| mozjs38 | Launchpad、Ubuntu、Debian | focal | 需要分类 |
 |         |         | focal | 不存在 |
 |         |         | jammy | 不存在 |
 |         |         | mantic | 不存在 |
 |         |         | upstream | 需要分类 |
-| mozjs52 | Launchpad、Ubuntu、Debian | 需要分类 |
+| mozjs52 | Launchpad、Ubuntu、Debian | focal | 需要分类 |
 |         |         | focal | 需要分类 |
 |         |         | jammy | 不存在 |
 |         |         | mantic | 不存在 |
 |         |         | upstream | 需要分类 |
-| mozjs68 | Launchpad、Ubuntu、Debian | 需要分类 |
+| mozjs68 | Launchpad、Ubuntu、Debian | focal | 需要分类 |
 |         |         | focal | 需要分类 |
 |         |         | jammy | 不存在 |
 |         |         | mantic | 不存在 |
 |         |         | upstream | 需要分类 |
-| mozjs78 | Launchpad、Ubuntu、Debian | 不存在 |
+| mozjs78 | Launchpad、Ubuntu、Debian |
 |         |         | focal | 需要分类 |
 |         |         | jammy | 不存在 |
 |         |         | mantic | 不存在 |
 |         |         | upstream | 需要分类 |
-| mozjs91 | Launchpad、Ubuntu、Debian | 不存在 |
+| mozjs91 | Launchpad、Ubuntu、Debian |
 |         |         | focal | 需要分类 |
 |         |         | jammy | 不存在 |
 |         |         | mantic | 不存在 |
 |         |         | upstream | 需要分类 |
-| mozjs102 | Launchpad、Ubuntu、Debian | 不存在 |
+| mozjs102 | Launchpad、Ubuntu、Debian |
 |         |         | focal | 需要分类 |
 |         |         | jammy | 不存在 |
 |         |         | mantic | 需要分类 |
